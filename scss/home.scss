@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 @import "./Base/reset";
-@import "./Utils/mixins";
-@import "./Utils/variables";
-@import "./Utils/breakpoints";
+@import "./Utils/_mixins";
+@import "./Utils/_variables";
+@import "./Utils/_breakpoints";
+
+@import "./Layout/_header";
+@import "./Layout/_body";
+@import "./Layout/_footer";

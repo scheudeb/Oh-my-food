@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/:./css/styles.css"
+    "sass": "sass --watch ./scss/home.scss:./css/styles.css",
+    "prefix": "postcss ./css/styles.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -11,6 +12,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/scheudeb/Oh-my-food/issues"
   },
