@@ -1,0 +1,19 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/:./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scheudeb/Oh-my-food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scheudeb/Oh-my-food/issues"
+  },
+  "homepage": "https://github.com/scheudeb/Oh-my-food#readme",
+  "description": ""
+}
