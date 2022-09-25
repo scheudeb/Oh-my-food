@@ -1,7 +1,11 @@
 //header
 
-.header{
+.header {
     display: flex;
     justify-content: center;
+    box-shadow: 5px 5px 5px $shadow;
  
+    & img {
+        margin: 10px 0 10px 0;
+    }
 }

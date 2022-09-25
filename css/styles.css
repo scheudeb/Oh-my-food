@@ -10,6 +10,25 @@
 .header {
   display: flex;
   justify-content: center;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+.header img {
+  margin: 10px 0 10px 0;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 5px;
+}
+footer h5 {
+  font-family: shrikhand, cursive;
+  font-size: 20px;
+  margin-top: 0px;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

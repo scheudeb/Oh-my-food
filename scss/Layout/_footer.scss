@@ -1,0 +1,17 @@
+//footer
+
+footer {
+    background-color: #353535;
+    color: white;
+    padding: 5px;
+        & h5{
+            font-family: shrikhand, cursive;
+            font-size: 20px;
+            margin-top: 0px;
+            // padding-top: 10px;
+        }
+        & ul a {
+            color: white;
+            text-decoration: none;
+        }
+}
