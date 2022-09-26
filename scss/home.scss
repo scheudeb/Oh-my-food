@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-@import "./Base/reset";
-@import "./Utils/_mixins";
 @import "./Utils/_variables";
+@import "./Base/_reset";
+@import "./Utils/_mixins";
+
 @import "./Utils/_breakpoints";
 
 @import "./Layout/_header";
-@import "./Layout/_body";
 @import "./Layout/_footer";
+@import "./Layout/_body";

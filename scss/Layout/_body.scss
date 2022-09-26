@@ -1,0 +1,15 @@
+.section_location
+{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #eaeaea;
+
+        & h3 {
+            display: flex;
+            justify-content: center;
+        }
+        & i {
+            width: 20px;
+        }
+}

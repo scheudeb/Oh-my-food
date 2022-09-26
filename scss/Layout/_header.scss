@@ -3,9 +3,10 @@
 .header {
     display: flex;
     justify-content: center;
-    box-shadow: 5px 5px 5px $shadow;
+    box-shadow: 0px 5px 30px $shadow;
  
     & img {
         margin: 10px 0 10px 0;
+        width: 50%;
     }
 }
