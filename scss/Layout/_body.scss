@@ -1,17 +1,69 @@
-.section_location
-{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    background-color: #eaeaea;
-    margin-top: 5px;
 
-
-        & h3 {
+    .section_location
+        {
+            height: 50px;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            background-color: #dad6d6;
+            margin: 5px 0 0px 0;
+
+                & h3 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                }
+                    & i {
+                    width: 20px;
+                    }
         }
-        & i {
-            width: 20px;
+
+    .section_flex
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        
+
+        #section_presentation {
+            
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            height: 250px;
+            // width: 85%;
+            background: linear-gradient(white,#eaeaea);
+            padding: 30px;
+            // margin-right: 0;
+            
+                    & h1
+                    {
+                        width: 100%
+                    }  
+
+                    & p {
+                        
+                        font-size: $fontsize-text;
+                    }
+
+                    & .button
+                    {
+                        background: linear-gradient(167deg, #ff79da, #9356dc);
+                        color: white;
+                        padding: 17px;
+                        border-radius: 50px;
+                        border: none;
+                        box-shadow: 4px 4px 2px lightgrey;
+                        width: 60vw;
+                        max-width: 250px;
+                        align-self: center;
+                        cursor: pointer;
+                    }
         }
+
+         
 }

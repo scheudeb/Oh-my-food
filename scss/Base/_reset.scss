@@ -2,11 +2,26 @@
 {
     margin: 0;
     padding: 0;
-    border: 0;
-    width: 100%; 
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    // overflow: hidden
 }
 
 h1, h2, h3, h4, h5, p, span
 {
     font-family: $font-text;
+}
+
+h1, h2
+{
+    font-size: $fontsize-title;
+
+}
+
+h3, h4
+
+p, span, h5
+{
+    font-size: 12px;
 }

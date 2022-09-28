@@ -3,22 +3,32 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, p, span {
   font-family: "Roboto", sans-serif;
 }
 
+h1, h2 {
+  font-size: 20px;
+}
+
+h3, h4 p,
+span, h5 {
+  font-size: 12px;
+}
+
 .header {
   display: flex;
   justify-content: center;
-  box-shadow: 0px 5px 30px rgb(187, 184, 184);
+  box-shadow: 0px 5px 30px rgb(145, 144, 144);
 }
 .header img {
   margin: 10px 0 10px 0;
-  width: 50%;
+  width: 45%;
 }
 
 footer {
@@ -55,15 +65,53 @@ footer i {
   height: 50px;
   display: flex;
   align-items: center;
-  background-color: #eaeaea;
-  margin-top: 5px;
+  background-color: #dad6d6;
+  margin: 5px 0 0px 0;
 }
 .section_location h3 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 .section_location i {
   width: 20px;
+}
+
+.section_flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+}
+.section_flex #section_presentation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  height: 250px;
+  background: linear-gradient(white, #eaeaea);
+  padding: 30px;
+}
+.section_flex #section_presentation h1 {
+  width: 100%;
+}
+.section_flex #section_presentation p {
+  font-size: 14px;
+}
+.section_flex #section_presentation .button {
+  background: linear-gradient(167deg, #ff79da, #9356dc);
+  color: white;
+  padding: 17px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 4px 4px 2px lightgrey;
+  width: 60vw;
+  max-width: 250px;
+  align-self: center;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
