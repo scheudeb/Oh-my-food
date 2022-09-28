@@ -65,7 +65,7 @@ footer i {
   height: 50px;
   display: flex;
   align-items: center;
-  background-color: #dad6d6;
+  background-color: rgb(236, 233, 233);
   margin: 5px 0 0px 0;
 }
 .section_location h3 {
@@ -94,6 +94,7 @@ footer i {
   height: 250px;
   background: linear-gradient(white, #eaeaea);
   padding: 30px;
+  margin-bottom: 25px;
 }
 .section_flex #section_presentation h1 {
   width: 100%;
@@ -104,14 +105,33 @@ footer i {
 .section_flex #section_presentation .button {
   background: linear-gradient(167deg, #ff79da, #9356dc);
   color: white;
-  padding: 17px;
+  height: 50px;
   border-radius: 50px;
   border: none;
-  box-shadow: 4px 4px 2px lightgrey;
   width: 60vw;
   max-width: 250px;
   align-self: center;
   cursor: pointer;
+}
+.section_flex #section_step {
+  padding: 20px;
+  height: auto;
+}
+.section_flex #section_step .section_step_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 30px 20px 0px;
+  padding-left: 8px;
+  background-color: rgb(236, 233, 233);
+  border: 2px rgb(236, 233, 233) solid;
+  box-shadow: 2px 5px 16px 0px rgb(236, 233, 233);
+  border-radius: 12px;
+  height: 60px;
+}
+.section_flex #section_step .section_step_button_position {
+  box-shadow: 50% #9356dc;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
