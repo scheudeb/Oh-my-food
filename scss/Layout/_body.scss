@@ -70,25 +70,21 @@
          
             & .section_step_button
             {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin: 30px 30px 20px 0px;
-                padding-left: 8px;
-                background-color: $bg-btn;
-                border: 2px $bg-btn solid;
-                box-shadow: 2px 5px 16px 0px $bg-btn;
-                border-radius: 12px;
-                height: 60px;
+                @include  btn;
             }
 
-            & .section_step_button_position
-            {
-            // display: flex;
-            box-shadow: 50% $primary;
-            border-radius: 5px;
-
-            // margin-left: -50px;
+            & .section_step_button_dif {
+                @include btn;
             }
+                & span {
+                    font-weight: bold;
+                }
+                
+                &__p
+                {
+                box-shadow: 50% $primary;
+                border-radius: 5px;
+                }
+
         }
 }

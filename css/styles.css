@@ -16,9 +16,8 @@ h1, h2 {
   font-size: 20px;
 }
 
-h3, h4 p,
-span, h5 {
-  font-size: 12px;
+p, span, h5 {
+  font-size: 15px;
 }
 
 .header {
@@ -100,7 +99,7 @@ footer i {
   width: 100%;
 }
 .section_flex #section_presentation p {
-  font-size: 14px;
+  font-size: 15px;
 }
 .section_flex #section_presentation .button {
   background: linear-gradient(167deg, #ff79da, #9356dc);
@@ -121,15 +120,32 @@ footer i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 30px 30px 20px 0px;
+  margin: 30px 0px 20px 10px;
   padding-left: 8px;
+  padding-right: 50px;
   background-color: rgb(236, 233, 233);
   border: 2px rgb(236, 233, 233) solid;
   box-shadow: 2px 5px 16px 0px rgb(236, 233, 233);
   border-radius: 12px;
   height: 60px;
 }
-.section_flex #section_step .section_step_button_position {
+.section_flex #section_step .section_step_button_dif {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 0px 20px 10px;
+  padding-left: 8px;
+  padding-right: 50px;
+  background-color: rgb(236, 233, 233);
+  border: 2px rgb(236, 233, 233) solid;
+  box-shadow: 2px 5px 16px 0px rgb(236, 233, 233);
+  border-radius: 12px;
+  height: 60px;
+}
+.section_flex #section_step span {
+  font-weight: bold;
+}
+.section_flex #section_step__p {
   box-shadow: 50% #9356dc;
   border-radius: 5px;
 }
