@@ -183,6 +183,7 @@ footer i {
   border-radius: 20px 20px 20px 20px;
   padding: 5px 5px 10px 0px;
   background-color: white;
+  position: relative;
   overflow: hidden;
 }
 .section_restauration .section_restauration_cards img {
@@ -191,6 +192,7 @@ footer i {
   height: 150px;
   object-fit: cover;
   object-position: 20% 60%;
+  position: relative;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
   margin-top: -5%;
@@ -198,13 +200,14 @@ footer i {
 .section_restauration .card_body {
   padding-left: 10px;
   justify-content: space-between;
+  position: relative;
   height: 200px;
 }
 .section_restauration .card_body span {
   background-color: #99e2d0;
   color: #1a8a68;
   font-weight: bold;
-  display: inline;
+  display: block;
   text-align: center;
   justify-content: center;
   width: 80px;
@@ -217,8 +220,10 @@ footer i {
   text-decoration: none;
 }
 .section_restauration .heart {
+  display: flex;
   position: absolute;
   z-index: 1;
+  text-outline: 0 #000;
 }
 
 /*# sourceMappingURL=styles.css.map */

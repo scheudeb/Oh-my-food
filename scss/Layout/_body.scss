@@ -123,6 +123,7 @@
         border-radius: 20px 20px 20px 20px;
         padding: 5px 5px 10px 0px;
         background-color: white;
+        position: relative;
         overflow: hidden;
     }
 
@@ -135,6 +136,7 @@
         {
             padding-left: 10px;
             justify-content: space-between;
+            position: relative;
             height: 200px;
 
             & span 
@@ -142,7 +144,7 @@
                 background-color: $tertiary;
                 color: #1a8a68;
                 font-weight: bold;
-                display: inline;
+                display: block;
                 text-align: center;
                 justify-content: center;
                 width: 80px;
@@ -160,8 +162,10 @@
 
         & .heart
         {
+            display: flex;
             position: absolute;
             z-index: 1;
+            text-outline:  0 #000;
 
 
         }
