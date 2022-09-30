@@ -203,7 +203,7 @@ footer i {
   position: relative;
   height: 200px;
 }
-.section_restauration .card_body span {
+.section_restauration span {
   background-color: #99e2d0;
   color: #1a8a68;
   font-weight: bold;
@@ -214,16 +214,19 @@ footer i {
   position: absolute;
   z-index: 1;
 }
-.section_restauration .card_body h4 {
+.section_restauration h4 {
   font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.section_restauration p {
   color: black;
   text-decoration: none;
 }
 .section_restauration .heart {
   display: flex;
-  position: absolute;
-  z-index: 1;
-  text-outline: 0 #000;
+  align-items: flex-end;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

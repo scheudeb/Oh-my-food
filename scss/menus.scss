@@ -43,7 +43,6 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    // margin-bottom: -0px;
 }
 
 .restaurant_menu
@@ -52,7 +51,6 @@
     transform: translateY(-80px);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    // height: 940px;
 
     .restaurant_menu_title
     {
@@ -127,10 +125,8 @@
             font-weight: bold;
         }
     }
-        
-    }
-
     
+    }
 }
 
 .main_button

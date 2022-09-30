@@ -130,6 +130,7 @@
             justify-content: space-between;
             position: relative;
             height: 200px;
+        }
 
             & span 
             {
@@ -150,14 +151,19 @@
                 color: black;
                 text-decoration: none
             }
-        }
+
+            & p 
+            {
+                color: black;
+                text-decoration: none;
+            }
 
         & .heart
         {
             display: flex;
-            position: absolute;
-            z-index: 1;
-            text-outline:  0 #000;
+            align-items: flex-end;
+            font-weight: bold;
         }
-        
+
     }
+        
