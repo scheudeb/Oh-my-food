@@ -41,28 +41,30 @@
 {
     background-color: $bg-menu;
     height: auto;
+    display: flex;
+    flex-direction: column;
     // margin-bottom: -0px;
 }
 
 .restaurant_menu
 {
     background-color: $bg-menu;
-    height: 940px;
+    transform: translateY(-80px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    // height: 940px;
 
     .restaurant_menu_title
     {
-        
         padding: 15px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;    
-        transform: translateY(-80px);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         background-color: $bg-menu;
         display: flex;
         flex-direction: row;
 
         & h1
         {
-            
             font-family: $font-logo;
             font-size: 25px;
             font-weight: bold;
@@ -80,7 +82,6 @@
 
     .restaurant_menu_all
     {
-        transform: translateY(-80px);
         background-color: $bg-menu;
         padding: 0px 15px 15px 15px;
         margin-bottom: 10px;
@@ -98,10 +99,8 @@
             height: 3px;
             margin-bottom: 10px;
         }
-        
-    }
 
-    .menu_info
+        .menu_info
     {
         background-color: white;
         margin-bottom: 15px;
@@ -128,23 +127,35 @@
             font-weight: bold;
         }
     }
+        
+    }
+
+    
 }
 
 .main_button
 {
-    margin: 10px;
     @include buttonpink;
-    height: 40px;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 
     & a
     {
+        display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: $font-text;
     }
 
 }
 
-// footer
-// {
-//     height: 500px
-// }
+footer
+{
+    padding-bottom: 20px;
+}
