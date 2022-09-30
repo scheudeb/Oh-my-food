@@ -1,12 +1,40 @@
-.header {
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@import "./Utils/_variables";
+@import "./Base/_reset";
+@import "./Utils/_mixins";
+
+@import "./Utils/_breakpoints";
+
+@import "./Layout/_header";
+@import "./Layout/_footer";
+
+.header
+{
     display: flex;
-    justify-content: center;
-    // width: 90%;
-    box-shadow: 0px 5px 30px $shadow;
-    // margin-bottom: 5px;
- 
-    & img {
-        margin: 10px 0 10px 0;
-        width: 45%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+
+    & a 
+    {
+        width: 50px;
+        align-items: center;
+        justify-content: left;
+        margin-right: 50px;
+
+    }
+    & i
+    {
+        padding-left: 15px;
+        width: 20px;
+        align-items: center;
+    }
+
+    & img 
+    {
+
     }
 }
