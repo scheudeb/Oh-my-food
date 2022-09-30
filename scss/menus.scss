@@ -31,10 +31,65 @@
         padding-left: 15px;
         width: 20px;
         align-items: center;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.restaurant_menu
+{
+    background-color: $bg-menu;
+
+    .restaurant_menu_title
+    {
+        
+        padding: 15px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;    
+        transform: translateY(-80px);
+        background-color: $bg-menu;
+        display: flex;
+        flex-direction: row;
+
+        & h1
+        {
+            
+            font-family: $font-logo;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        & i
+        {
+            width: 30px;
+            font-size: 25px;
+            font-weight: 100;
+            justify-content: center;
+            justify-content: right;
+        }
     }
 
-    & img 
+    .restaurant_menu_all
     {
+        transform: translateY(-80px);
+        background-color: $bg-menu;
+        padding: 0px 15px 15px 15px;
+        margin-bottom: 10px;
 
+        & h2
+        {
+            text-transform: uppercase;
+            font-weight: 100;
+        }
+
+        & .underline
+        {
+            background-color: $tertiary;
+            width: 10%;
+            height: 5px;
+            margin-bottom: 10px;
+        }
+        
     }
 }

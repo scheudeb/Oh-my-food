@@ -52,3 +52,16 @@
     border-top-right-radius: inherit;
     margin-top: -5%;
 }
+
+@mixin buttonpink
+ {
+    background: linear-gradient(167deg, #ff79da, #9356dc);
+    color: white;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    width: 60vw;
+    max-width: 250px;
+    align-self: center;
+    cursor: pointer;
+}
