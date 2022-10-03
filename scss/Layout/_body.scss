@@ -71,13 +71,11 @@
                     font-weight: bold;
                     display: flex;
                     flex-direction: row;
-                    justify-content:center;
-                    align-items: center;
-                    margin-left: -50px;
+
                 }
                 & span i
                 {
-                    margin-left: px;
+                    margin-left: 15px;
                     color: grey;
                     width: 10%;
                 }
@@ -93,6 +91,10 @@
                 width: 18px;
                 }
 
+                & .section_step_span i
+                {
+                    color: $primary;
+                }
         }
 }
 
@@ -108,16 +110,22 @@
     {
         display: flex;
         width: 100%;
-        height: 220px;
+        height: 210px;
         margin-top: 15px;
         margin-bottom: 5px;
         box-shadow: 0px 5px 20px #e6e6e6;
         border-radius: 20px 20px 20px 20px;
-        padding: 5px 5px 10px 0px;
+        padding: 5px 0px 0px 0px;
         background-color: white;
-        position: relative;
         overflow: hidden;
+
     }
+
+        & .card
+        {
+            text-decoration: none;
+
+        }
 
         & .section_restauration_cards img
         {
@@ -126,10 +134,13 @@
 
         & .card_body 
         {
+            display: flex;
+            flex-direction: column;
             padding-left: 10px;
             justify-content: space-between;
             position: relative;
-            height: 200px;
+
+            // height: 180px;
         }
 
             & span 
@@ -139,30 +150,38 @@
                 font-weight: bold;
                 display: block;
                 text-align: center;
+                align-items: center;
                 justify-content: center;
                 width: 80px;
+                height: 30px;
                 position: absolute;
                 z-index: 1;
+                left: 260px;
+                padding-top: 5px;
+
             }
 
             & h4
             {
                 font-weight: bold;
                 color: black;
-                text-decoration: none
+                padding: 15px 0px 5px 0px;
             }
 
             & p 
             {
                 color: black;
-                text-decoration: none;
             }
 
         & .heart
         {
-            display: flex;
-            align-items: flex-end;
             font-weight: bold;
+            position: absolute;
+            color: black;
+            font-size: 25px;
+            z-index: 1;
+            left: 290px;
+            bottom: 5px;
         }
 
     }

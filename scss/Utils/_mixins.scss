@@ -43,7 +43,7 @@
 
 @mixin cardsimg {
     display: flex;
-    width: 350px;
+    width: inherit;
     height: 150px;
     object-fit: cover;
     object-position: 20% 60%;
