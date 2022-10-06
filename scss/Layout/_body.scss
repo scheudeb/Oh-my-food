@@ -25,7 +25,6 @@
     flex-wrap: wrap;
     height: auto;
     width: 100%;
-    
 
     #section_presentation {
         
@@ -44,35 +43,37 @@
                     width: 100%
                 }  
 
-                & p {
-                    
-                    font-size: $fontsize-text;
-                }
+                    & p {
+                        
+                        font-size: $fontsize-text;
+                    }
 
-                & .button
-                {
-                    @include buttonpink;
-                }
+                        & .button
+                        {
+                            @include buttonpink;
+                        }
     }
     #section_step
         {
         padding: 20px;
         height: auto;
+        }
         
             & .section_step_button
             {
                 @include  btn;
             }
 
-            & .section_step_button_dif {
+            & .section_step_button_dif 
+            {
                 @include btn3;
             }
                 & span {
                     font-weight: bold;
                     display: flex;
                     flex-direction: row;
-
                 }
+
                 & span i
                 {
                     margin-left: 15px;
@@ -95,7 +96,7 @@
                 {
                     color: $primary;
                 }
-        }
+        
 }
 
 .section_restauration
@@ -139,8 +140,6 @@
             padding-left: 10px;
             justify-content: space-between;
             position: relative;
-
-            // height: 180px;
         }
 
             & span 
@@ -156,7 +155,7 @@
                 height: 30px;
                 position: absolute;
                 z-index: 1;
-                left: 260px;
+                left: 72%;
                 padding-top: 5px;
 
             }
@@ -173,16 +172,29 @@
                 color: black;
             }
 
-        & .heart
+        .heart
         {
             font-weight: bold;
             position: absolute;
             color: black;
             font-size: 25px;
             z-index: 1;
-            left: 290px;
+            left: 85%;
             bottom: 5px;
         }
-
-    }
-        
+                
+        .heart i:hover
+                {
+                    background: linear-gradient($primary, $secondary);
+                    color: white;
+                    font-weight: 600;
+                    transform: scale(1.2);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    width: inherit;
+                    position: absolute;
+                    z-index: 1;
+                    left: 10%;
+                    bottom: 5px;
+                }
+            }

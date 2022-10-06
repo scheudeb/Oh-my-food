@@ -116,7 +116,7 @@ footer i {
   padding: 20px;
   height: auto;
 }
-.section_flex #section_step .section_step_button {
+.section_flex .section_step_button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -130,7 +130,7 @@ footer i {
   height: 60px;
   width: auto;
 }
-.section_flex #section_step .section_step_button_dif {
+.section_flex .section_step_button_dif {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -143,17 +143,17 @@ footer i {
   height: 60px;
   width: auto;
 }
-.section_flex #section_step span {
+.section_flex span {
   font-weight: bold;
   display: flex;
   flex-direction: row;
 }
-.section_flex #section_step span i {
+.section_flex span i {
   margin-left: 15px;
   color: grey;
   width: 10%;
 }
-.section_flex #section_step .section_step_button_position {
+.section_flex .section_step_button_position {
   display: flex;
   color: white;
   background-color: #9356dc;
@@ -162,7 +162,7 @@ footer i {
   border-radius: 50%;
   width: 18px;
 }
-.section_flex #section_step .section_step_span i {
+.section_flex .section_step_span i {
   color: #9356dc;
 }
 
@@ -218,7 +218,7 @@ footer i {
   height: 30px;
   position: absolute;
   z-index: 1;
-  left: 260px;
+  left: 72%;
   padding-top: 5px;
 }
 .section_restauration h4 {
@@ -235,7 +235,20 @@ footer i {
   color: black;
   font-size: 25px;
   z-index: 1;
-  left: 290px;
+  left: 85%;
+  bottom: 5px;
+}
+.section_restauration .heart i:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  color: white;
+  font-weight: 600;
+  transform: scale(1.2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: inherit;
+  position: absolute;
+  z-index: 1;
+  left: 10%;
   bottom: 5px;
 }
 
