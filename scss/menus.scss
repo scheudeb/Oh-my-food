@@ -127,28 +127,38 @@
 
         & .menu_check
         {
-            display: none;
-        }
-
-        & .menu_check:hover
-        {
-            color: #f6f6f6;
-            background-color: $tertiary;
-            font-size: xx-large;
-            text-align: center;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            transform: rotate(360deg);
-            cursor: pointer;
-            transition: all 700ms;
             display: flex;
             align-items: center;
-            margin: -15px;
-            width: 70px;
-            margin-left: 20px;
-         }
-    }
-    
+            justify-content: center;
+            background-color: $tertiary;
+            border-radius: 0px 10px 10px 0px;
+            // padding: 10px;
+            // margin: -20px;
+            height: 100%;
+            width: 0px 3s;
+            transition-timing-function: linear;
+            float: right;   
+            opacity: 0;
+            transition: background-position 150ms ease-out;
+        
+            &:hover
+            {
+                opacity: 1;
+                width: 50px;
+            }
+        
+
+            & .menu_check i
+            {
+                font-size: 30px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white; 
+            }
+        }
     }
 }
 
