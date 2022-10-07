@@ -68,14 +68,14 @@
             font-weight: bold;
         }
 
-        & i
-        {
-            width: 30px;
-            font-size: 25px;
-            font-weight: 100;
-            justify-content: center;
-            justify-content: right;
-        }
+            & i
+            {
+                width: 30px;
+                font-size: 25px;
+                font-weight: 100;
+                justify-content: center;
+                justify-content: right;
+            }
     }
 
     .restaurant_menu_all
@@ -124,6 +124,29 @@
             align-items: flex-end;
             font-weight: bold;
         }
+
+        & .menu_check
+        {
+            display: none;
+        }
+
+        & .menu_check:hover
+        {
+            color: #f6f6f6;
+            background-color: $tertiary;
+            font-size: xx-large;
+            text-align: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transform: rotate(360deg);
+            cursor: pointer;
+            transition: all 700ms;
+            display: flex;
+            align-items: center;
+            margin: -15px;
+            width: 70px;
+            margin-left: 20px;
+         }
     }
     
     }

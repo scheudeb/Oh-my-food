@@ -150,6 +150,25 @@ footer i {
   align-items: flex-end;
   font-weight: bold;
 }
+.restaurant_menu .restaurant_menu_all .menu_info .menu_check {
+  display: none;
+}
+.restaurant_menu .restaurant_menu_all .menu_info .menu_check:hover {
+  color: #f6f6f6;
+  background-color: #99e2d0;
+  font-size: xx-large;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: rotate(360deg);
+  cursor: pointer;
+  transition: all 700ms;
+  display: flex;
+  align-items: center;
+  margin: -15px;
+  width: 70px;
+  margin-left: 20px;
+}
 
 .main_button {
   background: linear-gradient(167deg, #ff79da, #9356dc);
