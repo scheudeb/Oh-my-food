@@ -184,9 +184,6 @@ footer i {
   background-color: white;
   overflow: hidden;
 }
-.section_restauration .card {
-  text-decoration: none;
-}
 .section_restauration .section_restauration_cards img {
   display: flex;
   width: inherit;
@@ -198,14 +195,10 @@ footer i {
   border-top-right-radius: inherit;
   margin-top: -5%;
 }
-.section_restauration .card_body {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  justify-content: space-between;
-  position: relative;
+.section_restauration .card {
+  text-decoration: none;
 }
-.section_restauration span {
+.section_restauration .card span {
   background-color: #99e2d0;
   color: #1a8a68;
   font-weight: bold;
@@ -217,8 +210,15 @@ footer i {
   height: 30px;
   position: absolute;
   z-index: 1;
-  left: 87%;
+  right: 30px;
   padding-top: 5px;
+}
+.section_restauration .card_body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  justify-content: space-between;
+  position: relative;
 }
 .section_restauration h4 {
   font-weight: bold;

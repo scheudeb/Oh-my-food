@@ -122,79 +122,79 @@
 
     }
 
-        & .card
+    & .section_restauration_cards img
+    {
+        @include cardsimg;
+    }
+
+    & .card
+    {
+        text-decoration: none;
+        & span 
         {
-            text-decoration: none;
-
-        }
-
-        & .section_restauration_cards img
-        {
-            @include cardsimg;
-        }
-
-        & .card_body 
-        {
-            display: flex;
-            flex-direction: column;
-            padding-left: 10px;
-            justify-content: space-between;
-            position: relative;
-        }
-
-            & span 
-            {
-                background-color: $tertiary;
-                color: #1a8a68;
-                font-weight: bold;
-                display: block;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                width: 80px;
-                height: 30px;
-                position: absolute;
-                z-index: 1;
-                left: 87%;
-                padding-top: 5px;
-
-            }
-
-            & h4
-            {
-                font-weight: bold;
-                color: black;
-                padding: 15px 0px 5px 0px;
-            }
-
-            & p 
-            {
-                color: black;
-            }
-
-        .heart
-        {
+            background-color: $tertiary;
+            color: #1a8a68;
             font-weight: bold;
+            display: block;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 30px;
             position: absolute;
-            color: black;
-            font-size: 25px;
             z-index: 1;
-            left: 85%;
-            bottom: 5px;
+            // left: 87%;
+            right: 30px;
+            padding-top: 5px;
+
         }
-                
-        .heart i:active
-                {
-                    background: linear-gradient($primary, $secondary);
-                    color: white;
-                    font-weight: 600;
-                    transform: scale(1.2);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    width: inherit;
-                    position: absolute;
-                    z-index: 1;
-                    left: 10%;
-                    bottom: 5px;
-                }
-            }
+    }
+
+    & .card_body 
+    {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+
+    & h4
+    {
+        font-weight: bold;
+        color: black;
+        padding: 15px 0px 5px 0px;
+    }
+
+    & p 
+    {
+        color: black;
+    }
+
+    .heart
+    {
+        font-weight: bold;
+        position: absolute;
+        color: black;
+        font-size: 25px;
+        z-index: 1;
+        left: 85%;
+        bottom: 5px;
+    }
+            
+    .heart i:active
+    {
+        background: linear-gradient($primary, $secondary);
+        color: white;
+        font-weight: 600;
+        transform: scale(1.2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: inherit;
+        position: absolute;
+        z-index: 1;
+        left: 10%;
+        bottom: 5px;
+    }
+}

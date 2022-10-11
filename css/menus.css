@@ -197,7 +197,7 @@ main {
   transition: all 600ms;
 }
 .restaurant_menu .restaurant_menu_all .menu_info:hover .menu_check i {
-  transition: 1000ms;
+  transition: 800ms;
   transform: rotate(360deg);
 }
 
