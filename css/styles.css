@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: 1280px;
   box-sizing: border-box;
 }
 
@@ -218,7 +217,7 @@ footer i {
   height: 30px;
   position: absolute;
   z-index: 1;
-  left: 72%;
+  left: 87%;
   padding-top: 5px;
 }
 .section_restauration h4 {
@@ -238,7 +237,7 @@ footer i {
   left: 85%;
   bottom: 5px;
 }
-.section_restauration .heart i:hover {
+.section_restauration .heart i:active {
   background: linear-gradient(#9356dc, #ff79da);
   color: white;
   font-weight: 600;

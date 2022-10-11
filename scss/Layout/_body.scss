@@ -155,7 +155,7 @@
                 height: 30px;
                 position: absolute;
                 z-index: 1;
-                left: 72%;
+                left: 87%;
                 padding-top: 5px;
 
             }
@@ -183,7 +183,7 @@
             bottom: 5px;
         }
                 
-        .heart i:hover
+        .heart i:active
                 {
                     background: linear-gradient($primary, $secondary);
                     color: white;
