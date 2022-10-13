@@ -6,16 +6,31 @@ footer {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+
     
     & h5{
         font-family: shrikhand, cursive;
         font-size: 18px;
         margin-top: 10px;
-        // padding-top: 10px;
+        @include desktop
+        {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    
     }
 
     & ol {
         list-style-type: none;
+
+        @include desktop
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 120%;
+    }
     }
 
         & li {

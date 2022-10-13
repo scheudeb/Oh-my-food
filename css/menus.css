@@ -26,7 +26,12 @@ p, span, h5 {
 }
 .header img {
   margin: 10px 0 10px 0;
-  width: 45%;
+  width: 180px;
+}
+@media screen and (min-width: 992px) {
+  .header img {
+    width: 250px;
+  }
 }
 
 footer {
@@ -41,8 +46,23 @@ footer h5 {
   font-size: 18px;
   margin-top: 10px;
 }
+@media screen and (min-width: 992px) {
+  footer h5 {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
 footer ol {
   list-style-type: none;
+}
+@media screen and (min-width: 992px) {
+  footer ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120%;
+  }
 }
 footer li {
   display: flex;
@@ -65,6 +85,21 @@ footer i {
   align-items: center;
   justify-content: flex-start;
 }
+@media screen and (min-width: 992px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header img {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+  }
+}
 .header a {
   width: 50px;
   align-items: center;
@@ -78,6 +113,11 @@ footer i {
   color: black;
   font-size: 25px;
   font-weight: bold;
+}
+@media screen and (min-width: 992px) {
+  .header a i {
+    width: 50%;
+  }
 }
 
 main {
@@ -94,6 +134,12 @@ main .restaurant {
 main .restaurant img {
   height: 250px;
   object-fit: cover;
+  object-position: 10% 70%;
+}
+@media screen and (min-width: 992px) {
+  main .restaurant img {
+    height: 400px;
+  }
 }
 main .restaurant .restaurant_menu {
   background-color: rgb(236, 233, 233);
@@ -135,6 +181,17 @@ main .restaurant .restaurant_menu .restaurant_menu_all {
   padding: 0px 15px 15px 15px;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 992px) {
+  main .restaurant .restaurant_menu .restaurant_menu_all {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .restaurant .restaurant_menu .restaurant_menu_all .restaurant_menu_all_column {
+    padding: 5px;
+  }
+}
 main .restaurant .restaurant_menu .restaurant_menu_all h2 {
   text-transform: uppercase;
   font-weight: 100;
@@ -153,7 +210,9 @@ main .restaurant .restaurant_menu .restaurant_menu_all .menu_info {
   flex-direction: row;
   overflow: hidden;
   text-overflow: ellipsis;
+  position: relative;
   white-space: nowrap;
+  animation: 3s ease-in-out;
 }
 main .restaurant .restaurant_menu .restaurant_menu_all .menu_info .menu_info_text {
   display: flex;
@@ -161,6 +220,7 @@ main .restaurant .restaurant_menu .restaurant_menu_all .menu_info .menu_info_tex
   padding: 8px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 main .restaurant .restaurant_menu .restaurant_menu_all .menu_info .menu_info_text h3 {
   margin-bottom: 5px;

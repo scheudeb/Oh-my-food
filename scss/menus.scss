@@ -16,7 +16,24 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        
+
+        @include desktop
+        {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        & img 
+        {
+           @include desktop
+           {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 10px;
+           }
+        }
 
         & a 
         {
@@ -33,6 +50,11 @@
                 color: black;
                 font-size: 25px;
                 font-weight: bold;
+
+                @include desktop
+                {
+                    width: 50%;
+                }
             }
         }
     }
@@ -54,7 +76,13 @@ main
             & img
             {
                 height: 250px;
-                object-fit:cover;
+                object-fit: cover;
+                object-position: 10% 70%;
+
+                @include desktop
+                {
+                    height: 400px;
+                }
             }
 
         .restaurant_menu
@@ -107,6 +135,21 @@ main
                     padding: 0px 15px 15px 15px;
                     margin-bottom: 10px;
 
+                    @include desktop
+                    {
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    & .restaurant_menu_all_column
+                    {
+                        @include desktop
+                        {
+                            padding: 5px;
+                        }
+                        
+                    }
+
                     & h2
                     {
                         text-transform: uppercase;
@@ -130,8 +173,9 @@ main
                         flex-direction: row;
                         overflow: hidden;
                         text-overflow: ellipsis;
+                        position: relative;
                         white-space: nowrap;
-
+                        animation: 3s ease-in-out;
 
                             & .menu_info_text
                             {
@@ -140,6 +184,7 @@ main
                                 padding: 8px;
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
+                                overflow: hidden;
                             
                                 & h3
                                 {
