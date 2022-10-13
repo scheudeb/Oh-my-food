@@ -111,15 +111,21 @@ footer i {
   max-width: 250px;
   align-self: center;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 .section_flex #section_presentation .button:hover {
   box-shadow: 0px 10px 10px 0px rgb(119, 119, 119);
+  background: linear-gradient(#ff93e1, #a16be0);
 }
 .section_flex #section_step {
   padding: 20px;
   height: auto;
 }
-.section_flex .section_step_button {
+.section_flex #section_step .section_step_button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -133,7 +139,7 @@ footer i {
   height: 60px;
   width: auto;
 }
-.section_flex .section_step_button_dif {
+.section_flex #section_step .section_step_button_dif {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -146,17 +152,17 @@ footer i {
   height: 60px;
   width: auto;
 }
-.section_flex span {
+.section_flex #section_step span {
   font-weight: bold;
   display: flex;
   flex-direction: row;
 }
-.section_flex span i {
+.section_flex #section_step span i {
   margin-left: 15px;
   color: grey;
   width: 10%;
 }
-.section_flex .section_step_button_position {
+.section_flex #section_step .section_step_button_position {
   display: flex;
   color: white;
   background-color: #9356dc;
@@ -164,9 +170,6 @@ footer i {
   box-shadow: 0px 0px 0px 5px #9356dc;
   border-radius: 50%;
   width: 18px;
-}
-.section_flex .section_step_span i {
-  color: #9356dc;
 }
 
 .section_restauration {
@@ -188,21 +191,10 @@ footer i {
   background-color: white;
   overflow: hidden;
 }
-.section_restauration .section_restauration_cards img {
-  display: flex;
-  width: inherit;
-  height: 150px;
-  object-fit: cover;
-  object-position: 20% 60%;
-  position: relative;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  margin-top: -5%;
-}
-.section_restauration .card {
+.section_restauration .section_restauration_cards .card {
   text-decoration: none;
 }
-.section_restauration .card span {
+.section_restauration .section_restauration_cards .card span {
   background-color: #99e2d0;
   color: #1a8a68;
   font-weight: bold;
@@ -217,22 +209,33 @@ footer i {
   right: 30px;
   padding-top: 5px;
 }
-.section_restauration .card_body {
+.section_restauration .section_restauration_cards .card img {
+  display: flex;
+  width: inherit;
+  height: 150px;
+  object-fit: cover;
+  object-position: 20% 60%;
+  position: relative;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  margin-top: -5%;
+}
+.section_restauration .section_restauration_cards .card .card_body {
   display: flex;
   flex-direction: column;
   padding-left: 10px;
   justify-content: space-between;
   position: relative;
 }
-.section_restauration h4 {
+.section_restauration .section_restauration_cards .card .card_body h4 {
   font-weight: bold;
   color: black;
   padding: 15px 0px 5px 0px;
 }
-.section_restauration p {
+.section_restauration .section_restauration_cards .card .card_body p {
   color: black;
 }
-.section_restauration .heart {
+.section_restauration .section_restauration_cards .card .card_body .heart {
   font-weight: bold;
   position: absolute;
   color: black;
@@ -241,7 +244,7 @@ footer i {
   left: 85%;
   bottom: 5px;
 }
-.section_restauration .heart i:active {
+.section_restauration .section_restauration_cards .card .card_body .heart i:hover {
   background: linear-gradient(#9356dc, #ff79da);
   color: white;
   font-weight: 600;
