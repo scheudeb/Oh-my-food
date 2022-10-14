@@ -134,7 +134,7 @@ main
                     background-color: $bg-menu;
                     padding: 0px 15px 15px 15px;
                     margin-bottom: 10px;
-
+                
                     @include desktop
                     {
                         display: flex;
@@ -164,6 +164,26 @@ main
                         margin-bottom: 10px;
                     }
 
+                    .menu_category
+                    {
+                        
+
+                        .menu_items 
+                        {
+                            @for $i from 1 through 3
+                            {
+                                &:nth-child(#{$i})
+                                {
+                                    animation-delay: 200ms * $i;
+                                }
+                            }
+                            animation: appear 1s;
+                            animation-fill-mode: both;
+                        }
+    
+                    }
+
+
                     .menu_info
                     {
                         background-color: white;
@@ -175,7 +195,6 @@ main
                         text-overflow: ellipsis;
                         position: relative;
                         white-space: nowrap;
-                        animation: 3s ease-in-out;
 
                             & .menu_info_text
                             {

@@ -19,6 +19,14 @@ p, span, h5 {
   font-size: 15px;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -202,6 +210,19 @@ main .restaurant .restaurant_menu .restaurant_menu_all .underline {
   height: 3px;
   margin-bottom: 10px;
 }
+main .restaurant .restaurant_menu .restaurant_menu_all .menu_category .menu_items {
+  animation: appear 1s;
+  animation-fill-mode: both;
+}
+main .restaurant .restaurant_menu .restaurant_menu_all .menu_category .menu_items:nth-child(1) {
+  animation-delay: 200ms;
+}
+main .restaurant .restaurant_menu .restaurant_menu_all .menu_category .menu_items:nth-child(2) {
+  animation-delay: 400ms;
+}
+main .restaurant .restaurant_menu .restaurant_menu_all .menu_category .menu_items:nth-child(3) {
+  animation-delay: 600ms;
+}
 main .restaurant .restaurant_menu .restaurant_menu_all .menu_info {
   background-color: white;
   margin-bottom: 15px;
@@ -212,7 +233,6 @@ main .restaurant .restaurant_menu .restaurant_menu_all .menu_info {
   text-overflow: ellipsis;
   position: relative;
   white-space: nowrap;
-  animation: 3s ease-in-out;
 }
 main .restaurant .restaurant_menu .restaurant_menu_all .menu_info .menu_info_text {
   display: flex;
