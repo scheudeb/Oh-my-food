@@ -186,6 +186,7 @@
         padding: 5px 0px 0px 0px;
         background-color: white;
         overflow: hidden;
+        position: relative;
 
         @include desktop
         {
@@ -206,20 +207,21 @@
                         background-color: $tertiary;
                         color: #1a8a68;
                         font-weight: bold;
-                        display: block;
+                        display: flex;
                         text-align: center;
                         align-items: center;
                         justify-content: center;
                         width: 80px;
                         height: 30px;
-                        position: absolute;
+                        // float: right;
+                        position:absolute;
                         z-index: 1;
-                        right: 30px;
+                        right: 0;
                         padding-top: 5px;
 
                         @include desktop
                         {
-                            right: 150px;
+                            // right: 150px;
                         }
                     }
                     

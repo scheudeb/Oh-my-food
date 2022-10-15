@@ -36,12 +36,6 @@ p, span, h5 {
   margin: 10px 0 10px 0;
   width: 180px;
 }
-@media screen and (min-width: 992px) {
-  .header img {
-    width: 250px;
-  }
-}
-
 footer {
   background-color: #353535;
   color: white;
@@ -151,7 +145,6 @@ main .restaurant img {
 }
 main .restaurant .restaurant_menu {
   background-color: rgb(236, 233, 233);
-  transform: translateY(-80px);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -188,6 +181,8 @@ main .restaurant .restaurant_menu .restaurant_menu_all {
   background-color: rgb(236, 233, 233);
   padding: 0px 15px 15px 15px;
   margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 992px) {
   main .restaurant .restaurant_menu .restaurant_menu_all {

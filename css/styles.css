@@ -36,12 +36,6 @@ p, span, h5 {
   margin: 10px 0 10px 0;
   width: 180px;
 }
-@media screen and (min-width: 992px) {
-  .header img {
-    width: 250px;
-  }
-}
-
 footer {
   background-color: #353535;
   color: white;
@@ -267,6 +261,7 @@ footer i {
   padding: 5px 0px 0px 0px;
   background-color: white;
   overflow: hidden;
+  position: relative;
 }
 @media screen and (min-width: 992px) {
   .section_restauration .section_restauration_cards {
@@ -285,7 +280,7 @@ footer i {
   background-color: #99e2d0;
   color: #1a8a68;
   font-weight: bold;
-  display: block;
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -293,13 +288,8 @@ footer i {
   height: 30px;
   position: absolute;
   z-index: 1;
-  right: 30px;
+  right: 0;
   padding-top: 5px;
-}
-@media screen and (min-width: 992px) {
-  .section_restauration .section_restauration_cards .card span {
-    right: 150px;
-  }
 }
 .section_restauration .section_restauration_cards .card img {
   display: flex;
