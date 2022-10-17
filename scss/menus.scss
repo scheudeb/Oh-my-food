@@ -12,24 +12,15 @@
 
 .header
     {
-        display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
-
-        @include desktop
-        {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
+        
         & img 
         {
            @include desktop
            {
             display: flex;
             justify-content: center;
+            align-items: center;
             margin: 0;
             padding: 10px;
            }
@@ -53,7 +44,7 @@
 
                 @include desktop
                 {
-                    width: 50%;
+                    
                 }
             }
         }
@@ -78,7 +69,8 @@ main
                 height: 250px;
                 object-fit: cover;
                 object-position: 10% 70%;
-
+                position: relative;
+                margin-bottom: -20px;
                 @include desktop
                 {
                     height: 400px;
@@ -99,6 +91,8 @@ main
                     background-color: $bg-menu;
                     display: flex;
                     flex-direction: row;
+                    position: relative;
+                    margin-top: -10px;
 
                     & h1
                     {
@@ -124,6 +118,7 @@ main
                             -webkit-text-fill-color: transparent;
                             width: inherit;
                             bottom: 5px;
+                            transition: 0.2s;
                         }
                     }
                 }

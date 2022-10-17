@@ -288,7 +288,7 @@ footer i {
   height: 30px;
   position: absolute;
   z-index: 1;
-  right: 0;
+  right: 15px;
   padding-top: 5px;
 }
 .section_restauration .section_restauration_cards .card img {
@@ -318,13 +318,14 @@ footer i {
   color: black;
 }
 .section_restauration .section_restauration_cards .card .card_body .heart {
-  font-weight: bold;
   position: absolute;
   color: black;
-  font-size: 25px;
+  width: 30px;
+  font-size: 26px;
   z-index: 1;
   left: 85%;
   bottom: 5px;
+  -webkit-background-clip: text;
 }
 @media screen and (min-width: 992px) {
   .section_restauration .section_restauration_cards .card .card_body .heart {
@@ -335,13 +336,11 @@ footer i {
   background: linear-gradient(#9356dc, #ff79da);
   color: white;
   font-weight: 600;
-  transform: scale(1.2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: inherit;
   position: absolute;
-  z-index: 1;
-  left: 10%;
+  transition: 0.2s;
   bottom: 5px;
 }
 
