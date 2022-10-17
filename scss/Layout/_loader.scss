@@ -1,0 +1,111 @@
+header, main, footer
+{
+    animation-name: opacity_all;
+    animation-duration: 2500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+
+}
+
+@keyframes opacity_all {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.loader 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    animation-name: fadding;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+
+    .loader_animation 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: $font-logo;
+        background-color: $tertiary;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        animation-name: spinner;
+        animation-duration: 3000ms;
+        animation-iteration-count: 3;
+        animation-fill-mode: both;
+    }
+
+    span 
+    {
+        color: white;
+        font-family: $font-logo;
+        font-size: 25px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: spinner_inv;
+        animation-duration: 3000ms;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+    }
+}
+
+@keyframes fadding {
+    from {
+        z-index: 900;
+        opacity: 1;
+    }
+    to {
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+@keyframes spinner {
+    from {
+        border-radius: 50%;
+        background-color: $primary;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 0%;
+        background-color: $secondary;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50%;
+        background-color: $tertiary;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 0%;
+        background-color: $secondary;
+        transform: rotate(135deg);
+    }
+    to {
+        border-radius: 50%;
+        background-color: $primary;
+        transform: rotate(0deg);
+    }
+    
+}
+

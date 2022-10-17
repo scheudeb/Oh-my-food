@@ -32,6 +32,8 @@
             align-items: center;
             justify-content: left;
             margin-right: 50px;
+            position: absolute;
+            left: 10px;
             
             & i
             {
@@ -118,7 +120,7 @@ main
                             -webkit-text-fill-color: transparent;
                             width: inherit;
                             bottom: 5px;
-                            transition: 0.2s;
+                            transition: 1s;
                         }
                     }
                 }

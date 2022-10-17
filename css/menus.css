@@ -98,6 +98,8 @@ footer i {
   align-items: center;
   justify-content: left;
   margin-right: 50px;
+  position: absolute;
+  left: 10px;
 }
 .header a i {
   padding-left: 15px;
@@ -165,7 +167,7 @@ main .restaurant .restaurant_menu .restaurant_menu_title i:hover {
   -webkit-text-fill-color: transparent;
   width: inherit;
   bottom: 5px;
-  transition: 0.2s;
+  transition: 1s;
 }
 main .restaurant .restaurant_menu .restaurant_menu_all {
   background-color: rgb(236, 233, 233);
