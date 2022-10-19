@@ -32,6 +32,7 @@ header, main, footer
     animation-iteration-count: 1;
     animation-fill-mode: both;
     animation-delay: 2s;
+    background-color: #F3F3F3;
 
     .loader_animation 
     {
@@ -63,9 +64,6 @@ header, main, footer
         animation-duration: 3000ms;
         animation-iteration-count: infinite;
         animation-fill-mode: both;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
     }
 }
 

@@ -109,6 +109,7 @@ footer i {
   font-size: 25px;
   font-weight: bold;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -167,7 +168,7 @@ main .restaurant .restaurant_menu .restaurant_menu_title i:hover {
   -webkit-text-fill-color: transparent;
   width: inherit;
   bottom: 5px;
-  transition: 1s;
+  transition: all 0.2s linear 0s;
 }
 main .restaurant .restaurant_menu .restaurant_menu_all {
   background-color: rgb(236, 233, 233);
@@ -180,16 +181,26 @@ main .restaurant .restaurant_menu .restaurant_menu_all {
   main .restaurant .restaurant_menu .restaurant_menu_all {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
   main .restaurant .restaurant_menu .restaurant_menu_all .restaurant_menu_all_column {
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
   }
 }
 main .restaurant .restaurant_menu .restaurant_menu_all h2 {
   text-transform: uppercase;
   font-weight: 100;
+}
+@media screen and (min-width: 992px) {
+  main .restaurant .restaurant_menu .restaurant_menu_all h2 {
+    width: 10%;
+  }
 }
 main .restaurant .restaurant_menu .restaurant_menu_all .underline {
   background-color: #99e2d0;
@@ -302,6 +313,11 @@ main .restaurant .main_button a {
 
 footer {
   padding-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    padding-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=menus.css.map */

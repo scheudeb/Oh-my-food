@@ -41,8 +41,7 @@
 
         @include desktop{
             margin: 0;
-            display: flex;
-            
+            display: flex; 
         }
         
                 & h1
@@ -84,7 +83,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-            // margin-bottom: 20px;
         }
 
         & h2
@@ -94,7 +92,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center
-                // width: 10%;
             }
         }
         
@@ -108,7 +105,6 @@
                         justify-content: space-around;
                         width: 40%
                     }
-
             }
 
             & .section_step_button_dif 
@@ -118,7 +114,6 @@
                 {
                     width: 40%;
                 }
-                
             }
                 & span {
                     font-weight: bold;
@@ -143,8 +138,7 @@
                 border-radius: 50%;
                 width: 18px;
                 }
-        } 
-        
+        }     
 }
 
 .section_restauration
@@ -212,16 +206,9 @@
                         justify-content: center;
                         width: 80px;
                         height: 30px;
-                        // float: right;
                         position:absolute;
                         z-index: 1;
                         right: 15px;
-                        padding-top: 5px;
-
-                        @include desktop
-                        {
-                            // right: 150px;
-                        }
                     }
                     
                     &  img
@@ -251,31 +238,7 @@
                 
                         .heart
                         {
-                            position: absolute;
-                            color: black;
-                            width: 30px;
-                            font-size: 26px;
-                            z-index: 1;
-                            left: 85%;
-                            bottom: 5px;
-                            -webkit-background-clip: text;
-                            @include desktop {
-                                left: 92%;
-                            }
-                        
-                                
-                            & i:hover
-                            {
-                                background: linear-gradient($primary, $secondary);
-                                color: white;
-                                font-weight: 600;
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                                width: inherit;
-                                position: absolute;
-                                transition: 0.2s;
-                                bottom: 5px;
-                            }
+                            @include heart
                         }
                     }
             }

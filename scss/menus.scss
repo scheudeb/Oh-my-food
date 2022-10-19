@@ -43,11 +43,6 @@
                 color: black;
                 font-size: 25px;
                 font-weight: bold;
-
-                @include desktop
-                {
-                    
-                }
             }
         }
     }
@@ -105,23 +100,7 @@ main
 
                     & i
                     {
-                        width: 30px;
-                        font-size: 25px;
-                        font-weight: 100;
-                        display: flex;
-                        justify-content: center;
-                        justify-content: right;
-
-                        &:hover
-                        {
-                            background: linear-gradient($primary, $secondary);
-                            font-weight: 600;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            width: inherit;
-                            bottom: 5px;
-                            transition: 1s;
-                        }
+                        @include heartmenu
                     }
                 }
 
@@ -137,6 +116,8 @@ main
                     {
                         display: flex;
                         flex-direction: row;
+                        justify-content: center;
+                        width: 100%;
                     }
 
                     & .restaurant_menu_all_column
@@ -144,14 +125,20 @@ main
                         @include desktop
                         {
                             padding: 5px;
+                            display: flex;
+                            flex-direction: column;
+                            width: 30%;
                         }
-                        
                     }
 
                     & h2
                     {
                         text-transform: uppercase;
                         font-weight: 100;
+                        @include desktop
+                        {
+                            width: 10%;
+                        }
                     }
 
                     & .underline
@@ -164,8 +151,6 @@ main
 
                     .menu_category
                     {
-                        
-
                         .menu_items 
                         {
                             @for $i from 1 through 3
@@ -178,9 +163,7 @@ main
                             animation: appear 1s;
                             animation-fill-mode: both;
                         }
-    
                     }
-
 
                     .menu_info
                     {
@@ -284,7 +267,6 @@ main
                 color: white;
                 font-family: $font-text;
             }
-
         }
     }
 }
@@ -292,4 +274,8 @@ main
 footer
 {
     padding-bottom: 20px;
+    @include desktop
+    {
+        padding-bottom: 0;
+    }
 }
