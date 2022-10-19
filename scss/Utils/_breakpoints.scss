@@ -1,11 +1,4 @@
-$desktop: 992px;
-$tablette: 600px;
-
-@mixin tablette {
-    @media screen and (min-width: $tablette) {
-        @content;
-    }
-}
+$desktop: 1024px;
 
 @mixin desktop {
     @media screen and (min-width: $desktop){

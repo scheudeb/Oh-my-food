@@ -47,7 +47,7 @@ header, main, footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   animation-name: fadding;
@@ -144,7 +144,7 @@ footer h5 {
   font-size: 18px;
   margin-top: 10px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   footer h5 {
     margin-bottom: 10px;
     display: flex;
@@ -154,12 +154,12 @@ footer h5 {
 footer ol {
   list-style-type: none;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   footer ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 120%;
+    width: 100%;
   }
 }
 footer li {
@@ -212,7 +212,7 @@ footer i {
   padding: 30px;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_flex #section_presentation {
     margin: 0;
     display: flex;
@@ -249,7 +249,7 @@ footer i {
   padding: 20px;
   height: auto;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_flex #section_step {
     display: flex;
     flex-direction: column;
@@ -258,7 +258,7 @@ footer i {
     padding: 10px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_flex #section_step h2 {
     display: flex;
     justify-content: center;
@@ -279,7 +279,7 @@ footer i {
   height: 60px;
   width: auto;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_flex #section_step .section_step_button {
     display: flex;
     justify-content: space-around;
@@ -299,7 +299,7 @@ footer i {
   height: 60px;
   width: auto;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_flex #section_step .section_step_button_dif {
     width: 40%;
   }
@@ -331,14 +331,14 @@ footer i {
   align-items: center;
   background-color: rgb(236, 233, 233);
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_restauration h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_restauration {
     display: flex;
     flex-direction: row;
@@ -359,7 +359,7 @@ footer i {
   overflow: hidden;
   position: relative;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_restauration .section_restauration_cards {
     display: flex;
     flex-direction: row;
@@ -420,7 +420,7 @@ footer i {
   bottom: 5px;
   -webkit-background-clip: text;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section_restauration .section_restauration_cards .card .card_body .heart {
     left: 92%;
   }

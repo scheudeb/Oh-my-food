@@ -48,7 +48,7 @@ footer h5 {
   font-size: 18px;
   margin-top: 10px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   footer h5 {
     margin-bottom: 10px;
     display: flex;
@@ -58,12 +58,12 @@ footer h5 {
 footer ol {
   list-style-type: none;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   footer ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 120%;
+    width: 100%;
   }
 }
 footer li {
@@ -84,7 +84,7 @@ footer i {
 .header {
   align-items: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .header img {
     display: flex;
     justify-content: center;
@@ -128,7 +128,7 @@ main .restaurant img {
   position: relative;
   margin-bottom: -20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   main .restaurant img {
     height: 400px;
   }
@@ -177,7 +177,7 @@ main .restaurant .restaurant_menu .restaurant_menu_all {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   main .restaurant .restaurant_menu .restaurant_menu_all {
     display: flex;
     flex-direction: row;
@@ -185,7 +185,7 @@ main .restaurant .restaurant_menu .restaurant_menu_all {
     width: 100%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   main .restaurant .restaurant_menu .restaurant_menu_all .restaurant_menu_all_column {
     padding: 5px;
     display: flex;
@@ -197,7 +197,7 @@ main .restaurant .restaurant_menu .restaurant_menu_all h2 {
   text-transform: uppercase;
   font-weight: 100;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   main .restaurant .restaurant_menu .restaurant_menu_all h2 {
     width: 10%;
   }
@@ -314,7 +314,7 @@ main .restaurant .main_button a {
 footer {
   padding-bottom: 20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   footer {
     padding-bottom: 0;
   }
