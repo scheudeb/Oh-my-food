@@ -68,29 +68,6 @@
     cursor: pointer;
 }
 
-@mixin heart {
-    position: absolute;
-    color: black;
-    font-size: 26px;
-    left: 85%;
-    bottom: 5px;
-    -webkit-background-clip: text;
-    @include desktop {
-        left: 92%;
-    }
-
-        
-    & i:hover
-    {
-        background-image: linear-gradient($primary, $secondary);
-        font-weight: 600;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: absolute;
-        transition: all 0.2s linear 0s;
-        bottom: 5px;
-    }
-}
 @mixin heartmenu {
     width: 30px;
     font-size: 25px;

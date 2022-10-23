@@ -237,10 +237,35 @@
                             color: black;
                         }
                 
-                        .heart
+                        & i
                         {
-                            @include heart
+                            font-size: 26px;
+                            position: absolute;
+                            left: 89%;
+                            top: 40%;
+                            transform: translateY(-40%);
+                            color: black;
                         }
+                        
+                        .fas 
+                        {
+                            color: transparent;
+                            background: linear-gradient($primary,$secondary);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            opacity: 0;
+                            transition: all 200ms ease-in-out;
+                        }
+
+                        &:hover .fas
+                        {
+                            opacity: 1;
+                        }
+                        // .far
+                        // {
+                        //     color: transparent;
+                        // }
+                        
                     }
             }
     }
