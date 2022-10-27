@@ -70,14 +70,14 @@ footer li {
   display: flex;
   flex-direction: row;
   padding-bottom: 5px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
-footer a {
+footer li a {
   color: white;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
-footer i {
+footer li i {
   width: 30px;
 }
 
@@ -154,19 +154,15 @@ main .restaurant .restaurant_menu .restaurant_menu_title h1 {
   font-weight: bold;
 }
 main .restaurant .restaurant_menu .restaurant_menu_title i {
-  width: 30px;
+  width: auto;
   font-size: 25px;
   font-weight: 100;
-  display: flex;
-  justify-content: center;
-  justify-content: right;
 }
 main .restaurant .restaurant_menu .restaurant_menu_title i:hover {
   background: linear-gradient(#9356dc, #ff79da);
   font-weight: 600;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: inherit;
   bottom: 5px;
 }
 main .restaurant .restaurant_menu .restaurant_menu_all {
@@ -219,6 +215,9 @@ main .restaurant .restaurant_menu .restaurant_menu_all .menu_category .menu_item
 }
 main .restaurant .restaurant_menu .restaurant_menu_all .menu_category .menu_items:nth-child(3) {
   animation-delay: 600ms;
+}
+main .restaurant .restaurant_menu .restaurant_menu_all .menu_category .menu_items:nth-child(4) {
+  animation-delay: 800ms;
 }
 main .restaurant .restaurant_menu .restaurant_menu_all .menu_info {
   background-color: white;

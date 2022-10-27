@@ -12,11 +12,11 @@
             justify-content: center;
             align-items: center;
             font-size: 14px;
+            & i
+            {
+            width: 20px;
+            }
         }
-                & i
-                {
-                width: 20px;
-                }
 }
 
 .section_flex
@@ -45,31 +45,31 @@
             display: flex; 
         }
         
-            & h1
+        & h1
+        {
+            width: 100%
+        }  
+
+        & p
+        {   
+            font-size: $fontsize-text;
+        }
+
+        & .button
+        {
+            @include buttonpink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: $font-text;
+
+            &:hover
             {
-                width: 100%
-            }  
-
-            & p {
-                
-                font-size: $fontsize-text;
+                box-shadow: 0px 10px 10px 0px rgb(119, 119, 119);
+                background: linear-gradient(lighten(#FF79DA, 5%), lighten(#9356DC, 5%));
             }
-
-            & .button
-            {
-                @include buttonpink;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                font-family: $font-text;
-
-                &:hover
-                {
-                    box-shadow: 0px 10px 10px 0px rgb(119, 119, 119);
-                    background: linear-gradient(lighten(#FF79DA, 5%), lighten(#9356DC, 5%));
-                }
-            }
+        }
     }
 
     #section_step
@@ -150,6 +150,14 @@
     align-items: center;
     background-color: $bg-btn;
 
+    @include desktop
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     & h2
     {
        @include desktop
@@ -159,14 +167,6 @@
             margin-bottom: 10px;
         }
     }
-
-    @include desktop
-        {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
 
     & .section_restauration_cards
     {
@@ -196,77 +196,72 @@
             {
                 text-decoration: none;
             
-                    & span 
+                & span 
+                {
+                    background-color: $tertiary;
+                    color: #1a8a68;
+                    font-weight: bold;
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80px;
+                    height: 30px;
+                    position:absolute;
+                    z-index: 1;
+                    right: 15px;
+                }
+                
+                &  img
+                {
+                    @include cardsimg;
+                }
+
+                & .card_body 
+                {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 10px;
+                    justify-content: space-between;
+                    position: relative;
+                
+                    & h4
                     {
-                        background-color: $tertiary;
-                        color: #1a8a68;
                         font-weight: bold;
-                        display: flex;
-                        text-align: center;
-                        align-items: center;
-                        justify-content: center;
-                        width: 80px;
-                        height: 30px;
-                        position:absolute;
-                        z-index: 1;
-                        right: 15px;
+                        color: black;
+                        padding: 15px 0px 5px 0px;
                     }
-                    
-                    &  img
+            
+                    & p 
                     {
-                        @include cardsimg;
+                        color: black;
                     }
-
-                    & .card_body 
+            
+                    & i
                     {
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 10px;
-                        justify-content: space-between;
-                        position: relative;
-                    
-                        & h4
-                        {
-                            font-weight: bold;
-                            color: black;
-                            padding: 15px 0px 5px 0px;
-                        }
-                
-                        & p 
-                        {
-                            color: black;
-                        }
-                
-                        & i
-                        {
-                            font-size: 26px;
-                            position: absolute;
-                            left: 89%;
-                            top: 40%;
-                            transform: translateY(-40%);
-                            color: black;
-                        }
+                        font-size: 26px;
+                        position: absolute;
+                        left: 89%;
+                        top: 40%;
+                        transform: translateY(-40%);
+                        color: black;
+                    }
                         
-                        .fas 
-                        {
-                            color: transparent;
-                            background: linear-gradient($primary,$secondary);
-                            background-clip: text;
-                            -webkit-background-clip: text;
-                            opacity: 0;
-                            transition: all 200ms ease-in-out;
-                        }
+                    .fas 
+                    {
+                        color: transparent;
+                        background: linear-gradient(#1dbe8e,#164bbe); //linear-gradient($primary,$secondary);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        opacity: 0;
+                        transition: all 200ms ease-in-out;
 
-                        &:hover .fas
+                        &:hover
                         {
                             opacity: 1;
                         }
-                        // .far
-                        // {
-                        //     color: transparent;
-                        // }
-                        
                     }
+                }
             }
     }
 }

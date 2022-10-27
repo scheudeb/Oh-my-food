@@ -166,14 +166,14 @@ footer li {
   display: flex;
   flex-direction: row;
   padding-bottom: 5px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
-footer a {
+footer li a {
   color: white;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
-footer i {
+footer li i {
   width: 30px;
 }
 
@@ -190,7 +190,7 @@ footer i {
   align-items: center;
   font-size: 14px;
 }
-.section_location i {
+.section_location h3 i {
   width: 20px;
 }
 
@@ -332,18 +332,18 @@ footer i {
   background-color: rgb(236, 233, 233);
 }
 @media screen and (min-width: 1024px) {
-  .section_restauration h2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 1024px) {
   .section_restauration {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section_restauration h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 }
 .section_restauration .section_restauration_cards {
@@ -422,13 +422,13 @@ footer i {
 }
 .section_restauration .section_restauration_cards .card .card_body .fas {
   color: transparent;
-  background: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#1dbe8e, #164bbe);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.section_restauration .section_restauration_cards .card .card_body:hover .fas {
+.section_restauration .section_restauration_cards .card .card_body .fas:hover {
   opacity: 1;
 }
 

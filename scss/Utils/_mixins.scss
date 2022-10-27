@@ -69,12 +69,9 @@
 }
 
 @mixin heartmenu {
-    width: 30px;
+    width: auto;
     font-size: 25px;
     font-weight: 100;
-    display: flex;
-    justify-content: center;
-    justify-content: right;
 
     &:hover
     {
@@ -82,7 +79,6 @@
         font-weight: 600;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        width: inherit;
         bottom: 5px;
     }
 }

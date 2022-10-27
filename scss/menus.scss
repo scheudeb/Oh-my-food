@@ -61,18 +61,18 @@ main
         display: flex;
         flex-direction: column;
 
-            & img
+        & img
+        {
+            height: 250px;
+            object-fit: cover;
+            object-position: 10% 70%;
+            position: relative;
+            margin-bottom: -20px;
+            @include desktop
             {
-                height: 250px;
-                object-fit: cover;
-                object-position: 10% 70%;
-                position: relative;
-                margin-bottom: -20px;
-                @include desktop
-                {
-                    height: 400px;
-                }
+                height: 400px;
             }
+        }
 
         .restaurant_menu
         {
@@ -80,29 +80,29 @@ main
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
 
-                .restaurant_menu_title
+            .restaurant_menu_title
+            {
+                padding: 15px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                background-color: $bg-menu;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                margin-top: -10px;
+
+                & h1
                 {
-                    padding: 15px;
-                    border-top-left-radius: 30px;
-                    border-top-right-radius: 30px;
-                    background-color: $bg-menu;
-                    display: flex;
-                    flex-direction: row;
-                    position: relative;
-                    margin-top: -10px;
-
-                    & h1
-                    {
-                        font-family: $font-logo;
-                        font-size: 25px;
-                        font-weight: bold;
-                    }
-
-                    & i
-                    {
-                        @include heartmenu
-                    }
+                    font-family: $font-logo;
+                    font-size: 25px;
+                    font-weight: bold;
                 }
+
+                & i
+                {
+                    @include heartmenu
+                }
+            }
 
                 .restaurant_menu_all
                 {
@@ -153,7 +153,7 @@ main
                     {
                         .menu_items 
                         {
-                            @for $i from 1 through 3
+                            @for $i from 1 through 4
                             {
                                 &:nth-child(#{$i})
                                 {
