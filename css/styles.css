@@ -422,7 +422,7 @@ footer li i {
 }
 .section_restauration .section_restauration_cards .card .card_body .fas {
   color: transparent;
-  background: linear-gradient(#1dbe8e, #164bbe);
+  background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
